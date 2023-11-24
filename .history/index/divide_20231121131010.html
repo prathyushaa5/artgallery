@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+      background-color: #f0f0f0; /* Set the background color for the body */
+    }
+
+    .slant-divider {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px; /* Adjust the width of the slanted cut */
+      height: 100%;
+      background-color: #ffffff; /* Set the color of the slanted cut */
+      transform-origin: left center;
+      transform: translateX(-50%) skewX(-3deg); /* Adjust the skew angle as needed */
+    }
+
+    /* Additional styling for demonstration purposes */
+    .content-container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #333;
+    }
+    #div1{
+        background-image:url("../images/artist5.jpg");
+    }
+  </style>
+</head>
+<body>
+
+<div class="slant-divider"></div>
+
+<div class="content-container">
+  <!-- Your content for the first and second divs -->
+  <div id="div1">
+    <h2>First Div Content</h2>
+    <p>This is the content for the first div.</p>
+  </div>
+  <div id="div2">
+    <h2>Second Div Content</h2>
+    <p>This is the content for the second div.</p>
+  </div>
+</div>
+
+</body>
+</html>

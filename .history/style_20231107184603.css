@@ -1,0 +1,16 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+
+.profile{
+    width:10%;
+    border-radius:50%;
+}
+.details{
+    width:30%;
+}
+.username,.password{
+    width:100%;
+    
+}

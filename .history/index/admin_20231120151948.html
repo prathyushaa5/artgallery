@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    padding:0px;
+    margin:0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#9F91CC;
+}
+.upload{
+    margin:10px;
+    font-size:30px;
+    font-weight:bolder;
+    text-align:left;
+   
+   
+}
+.box{
+    width:30%;
+    height:74vh;
+    border:2px solid #ccc;
+    margin:100px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+    background-color:#ffffff;
+    text-align:center;  
+}
+input{
+  height:15%;
+  width:100%;
+  box-sizing:border-box;
+}
+
+#button,#reset{
+    color:#ffffff;
+    background-color:#9F91CC;
+    border:none;
+    font-weight:bolder;
+    display:block;
+    width:100%;
+
+}
+#button:hover{
+    opacity:0.5;
+}
+a:hover{
+    color:green;
+}
+#reset{
+    margin-top:10px;
+}
+#reset:hover{
+    opacity:0.5;
+}
+</style>
+<body>
+    <div class="box">
+        <form method="post" >
+            <div class="upload">Upload</div>
+        <input type="file" name="image" id="image" placeholder="Image" size="30" ><br><br>
+        <input type="number" name="price" id="price" placeholder="Price"><br><br>
+        <input type="button"onclick="uploadImage();" id="button" value="Upload"><br><br>
+        <input type ="reset" id="reset">
+        <p id="message"></p>
+        <script>
+            function uploadImage(){
+                if(document.getElementById("image").value&& document.getElementById("price").value){
+                document.getElementById('message').innerHTML="Upload Successful"
+                document.getElementById("image").value="" ;
+                document.getElementById("price").value="";
+                document.getElementById("message").style.color="Red";           
+            }
+            else{
+                document.getElementById('message').innerHTML="Fill in all the entries"
+                document.getElementById("message").style.color="Red";     
+            }}
+        </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.about-us{
+    width:70%;
+    height:50%;
+    border:2px solid #ccc;
+    border-radius:20px;
+    line-height:20px;
+    text-align:justify;
+    padding:20px;
+    display:block;
+    margin:auto;
+}
+h2{
+    text-align:center;
+}
+.myimg{
+    float:right;
+    width:25%;
+    margin:15px;
+}
+.social-media{
+    font-size:20px;
+}
+i{
+    color:black;
+}

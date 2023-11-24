@@ -1,0 +1,20 @@
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.about-us{
+    width:70%;
+    height:50%;
+    border:2px solid #ccc;
+    border-radius:20px;
+    line-height:20px;
+    text-align:justify;
+    padding:10px;
+}
+.myimg{
+    float:right;
+    width:250px;
+    margin:10px;
+}

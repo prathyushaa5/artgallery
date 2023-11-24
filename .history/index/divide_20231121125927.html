@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .slanted-container {
+      position: relative;
+      overflow: hidden;
+      height: 100vh; /* Adjust the height as needed */
+    }
+
+    .slant-divider {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      background-image: url('../images/artist3.jpg'); /* Set the path to your first background image */
+      background-size: cover;
+      background-position: center;
+      clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+      transform: translateX(-50%) skewX(-3deg); /* Adjust the skew angle as needed */
+      z-index: 1;
+    }
+
+    .content-container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .second-background {
+      background-image: url('../images/artist2.jpg'); /* Set the path to your second background image */
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+    }
+
+    /* Additional styling for demonstration purposes */
+    .content-container {
+      color: white;
+      padding: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slanted-container">
+  <div class="slant-divider"></div>
+  <div class="content-container second-background">
+    <!-- Your content for the second div -->
+    <p>Content for the second div goes here.</p>
+  </div>
+</div>
+
+</body>
+</html>

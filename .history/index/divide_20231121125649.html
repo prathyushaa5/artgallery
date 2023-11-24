@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .slanted-container {
+      position: relative;
+      height: 100vh; /* Adjust the height as needed */
+    }
+
+    .slanted-div {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      background-size: cover;
+      color: #fff; /* Text color for better visibility */
+    }
+
+    .slanted-div::before,
+    .slanted-div::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-size: cover;
+    }
+
+    .slanted-div::before {
+      background-image: url('../images/img10.jpg'); /* Add your first background image */
+      clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+      transform: skewY(-3deg);
+    }
+
+    .slanted-div::after {
+      background-image: url('../images/bg1.jpg'); /* Add your second background image */
+      clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+      transform: skewY(3deg);
+    }
+
+    /* Additional styling for demonstration purposes */
+    .slanted-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slanted-container">
+  <div class="slanted-div">
+    <!-- Your content for the first div goes here -->
+    <p>Content for the first div goes here.</p>
+  </div>
+</div>
+
+</body>
+</html>

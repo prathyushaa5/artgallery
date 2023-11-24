@@ -1,0 +1,19 @@
+body{
+    padding:0px;
+    margin:0px;
+    background-color:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.box{
+    width:50%;
+    height:50vh;
+    border:2px solid #ccc;
+    margin:100px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+}

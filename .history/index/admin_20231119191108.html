@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <label for="photo">Upload Art:</label>
+        <input type="file" id="photo">
+        <label for="price">Price:</label>
+        <input type="text" id="price">
+        <button onclick="uploadPhoto()">Upload</button>
+    </div>
+    <div id="all-photos-container"></div>
+<script>
+    function uploadPhoto(){
+        const photoInput=document.getElementById('photo');
+        const priceInput=document.getElementById('price');
+        const photoUrl=URL.createObjectURL(photoInput.files[0]);
+        const price=priceInput.value;
+        displayPhoto(photoUrl,price);
+    }
+     function displayPhoto(photoUrl,price){
+        const allPhotosContainer=document.getElementById('all')
+     }
+</script>
+</body>
+</html>

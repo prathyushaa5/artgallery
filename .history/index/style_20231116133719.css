@@ -1,0 +1,12 @@
+body{
+    padding:0px;
+    margin:0px;
+    background-color:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.box{
+    width:50%;
+    height:50%;
+}

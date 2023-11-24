@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+body{
+    padding:0px;
+    margin:0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#9F91CC;
+}
+.adminlogin{
+    margin:10px;
+    font-size:30px;
+    font-weight:bolder;
+    text-align:left;
+   
+   
+}
+.box{
+    width:30%;
+    height:65vh;
+    border:2px solid #ccc;
+    margin:100px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+    background-color:#ffffff;
+    text-align:center;  
+}
+input{
+  height:15%;
+  width:100%;
+  box-sizing:border-box;
+}
+a{
+    text-decoration:none;
+    color:#111111;
+}
+#button,#reset{
+    color:#ffffff;
+    background-color:#9F91CC;
+    border:none;
+    font-weight:bolder;
+    display:block;
+    width:100%;
+
+}
+#button:hover{
+    opacity:0.5;
+}
+
+#reset{
+    margin-top:10px;
+}
+#reset:hover{
+    opacity:0.5;
+}
+a{
+    display:block;
+    float:right;
+}
+</style>
+<body>
+    
+    <div class="box">
+        <form method="post" >
+            <div class="adminlogin">Admin Login</div>
+        <input type="text" name="Admin_ID" id="admin_id" placeholder="ADMIN_ID" size="30"><br><br>
+        <input type="password" name="password" id="password" placeholder="password"><br><br>
+        <input type="button" value="Enter" id="button" onclick="check();"><br><br>
+        <input type ="reset" id="reset">
+        <p id="message"></p>
+        <a href="../index/index.html">h<i class="fa-solid fa-arrow-left"></i></a>
+        
+</body>
+<script>
+    function check(){
+        if(document.getElementById("admin_id").value=="PRAT_7113" && document.getElementById("password").value=="7113"){
+            window.location.href="../index/admin.html";
+            alert("Login successful");
+        }
+        else{
+            document.getElementById("message").innerHTML="Admin ID or password wrong";            
+            document.getElementById("message").style.color="Red";     
+            document.getElementById("admin_id").value="" ;
+            document.getElementById("password").value="";       
+
+        }
+    }
+</script>
+</html>

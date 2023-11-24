@@ -1,0 +1,22 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color:#000000;
+}
+.navbar{
+    width:100%;
+    height:8vh;
+    background-color:yellow;
+    display:flex;
+    flex-direction:row;
+    float:right;
+   
+}
+.home,.login,.admin,.aboutUs{
+  
+}
+.sidebar{
+    height:92vh;
+    width:20%;
+    background-color:grey;
+}

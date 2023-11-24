@@ -1,0 +1,42 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+
+.profile{
+    width:30%;
+    border-radius:50%;
+}
+form{
+    width:30%;
+    border: 3px solid #f1f1f1;
+}
+
+
+input[type="text"],
+input[type="password"]{
+    padding:0.1rem;
+    margin:8px 0px;
+    display:inline-block;
+    width:100%
+    
+}
+.login,.username,.password,.remember{
+    padding:10px;
+    font-weight:bolder;
+}
+.b1{
+    background-color:#04AA6D;
+    color:white;
+    margin:8px 0px;
+    border:none;
+    cursor:pointer;
+    padding:0.5rem;
+    width:100%;
+}
+button:hover{
+    opacity:0.8;
+}
+.imgdiv{
+    text-align:center;
+}

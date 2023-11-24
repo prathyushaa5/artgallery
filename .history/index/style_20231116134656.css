@@ -1,0 +1,33 @@
+body{
+    padding:0px;
+    margin:0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#9D76C1;
+}
+.login{
+    margin:10px;
+    font-size:30px;
+    font-weight:bolder;
+    background-color:#ffffff;
+   
+}
+.box{
+    width:30%;
+    height:60vh;
+    border:2px solid #ccc;
+    margin:100px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+}
+input{
+    padding:10px 20px;
+}
+a{
+    text-decoration:none;
+    color:#ccc;
+}

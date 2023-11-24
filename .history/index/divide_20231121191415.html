@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      height: 100vh;
+    }
+
+    .split-container {
+      display: flex;
+      width: 100%;
+    }
+
+    .split-container > div {
+      flex: 1;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      overflow: hidden;
+    }
+
+    .split-container > div:hover {
+      background-color: #f0f0f0;
+    }
+
+
+    .content-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+    }
+    .page1{
+        background:url("../images/photography2.jpg");
+    } 
+    
+    .page2{
+        display:flex;
+        flex-direction:column;
+        color:black;
+    }
+    .sec{
+        height:100%;
+        width:100%;
+        background-color:#9F91CC;
+    }
+
+    #div1{
+        background:url("../images/part1.jpg");
+    }
+    #div2{
+        background:url("../images/part3.jpg");
+    }
+    #sec1,#sec2{
+        font-size:30px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="split-container">
+  <div class="content-container page1" onclick="location.href='page1.html';">
+  </div>
+  <div class="content-container page2" onclick="location.href='page2.html';">
+    <div id="div1" class="sec">
+        <div id="sec1">PHOTOGRAPHY</div>
+    </div>
+    <div id="div2" class="sec">
+        <div id="sec2">ART</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

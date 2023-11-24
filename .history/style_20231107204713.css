@@ -1,0 +1,66 @@
+body{
+    padding:0px;
+    margin:0px;
+    background-color:#80BD9E;
+}
+form{
+    margin:auto;
+    position:relative;
+    top:10rem;
+}
+
+.profile{
+    width:30%;
+    border-radius:50%;
+}
+form{
+    width:30%;
+    border: 10px solid #f1f1f1;
+    background-color:white;
+    box-shadow:12px 12px 10px grey;
+}
+.login,.username,.password,.remember{
+    padding:10px;
+}
+
+input[type=text],
+input[type=password]{
+    padding:1rem;
+    margin:8px 0px;
+    display:inline-block;
+    width:100%;
+    box-sizing:border-box;
+    border:1px solid #ccc;
+    
+}
+
+button{
+    background-color:#04AA6D;
+    color:white;
+    margin:8px 0px;
+    border:none;
+    cursor:pointer;
+    padding:0.5rem;
+    width:100%;
+}
+button:hover{
+    opacity:0.8;
+}
+.imgdiv{
+    text-align:center;
+}
+.container{
+ display:flex;
+ justify-content:space-around;
+ padding:1rem;
+}
+.cancelbutton{
+    width:auto;
+    background-color:#f44336;
+    
+}
+.bg{
+    width:auto;
+   
+}
+

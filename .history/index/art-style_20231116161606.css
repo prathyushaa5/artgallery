@@ -1,0 +1,34 @@
+body{
+    margin:0px;
+    padding:0px;   
+}
+
+.art-navbar{
+    width:100%;
+    background-color:#000000;
+    height:10vh;
+    padding:0px;
+    margin:0px;
+}
+.heading{
+    color:white;
+    padding:30px;
+    
+}
+.art-grid{
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    padding:10px;
+    
+}
+.grid{
+    border:2px solid black;
+    height:20rem;
+    margin:10px;
+}
+img{
+    height:20vh;
+    display:block;
+    margin:auto;
+    margin-top:10px;
+}

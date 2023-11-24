@@ -1,0 +1,14 @@
+body{
+    margin:0px;
+    padding:0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.about-us{
+    width:70%;
+    height:50%;
+    border:2px solid #ccc;
+    border-radius:20px;
+}

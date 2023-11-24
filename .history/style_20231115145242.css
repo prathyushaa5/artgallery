@@ -1,0 +1,93 @@
+body{
+    padding:0px;
+    margin:0px;
+    background-color:#000000;
+}
+.a{
+    text-decoration:none;
+    color:white;
+}
+form{
+    margin:auto;
+    position:relative;
+    top:10rem;
+    height:20%;
+    border-radius:12px;
+    background-color:#ccc;
+    color:#000000;
+    border:1px solid #ccc;
+}
+
+.profile{
+    width:30%;
+    border-radius:50%;
+    padding:5px;
+}
+.login,.username,.password,.remember{
+    padding:10px;
+}
+
+input[type=text],
+input[type=password]{
+    padding:1rem;
+    margin:8px 0px;
+    display:inline-block;
+    width:100%;
+    box-sizing:border-box;
+    border:1px solid #ccc;
+    
+}
+
+button{
+    background-color:#04AA6D;
+    color:white;
+    margin:8px 0px;
+    border:none;
+    cursor:pointer;
+    padding:0.5rem;
+    width:100%;
+}
+button:hover{
+    opacity:0.8;
+}
+.imgdiv{
+    text-align:center;
+}
+.container{
+ display:flex;
+ justify-content:space-around;
+ padding:1rem;
+}
+.cancelbutton{
+    width:auto;
+    background-color:#f44336;
+    
+}
+.bg{
+    width:100%;
+    
+}
+.bgimg{
+    positon:relative;
+    animation-name:wallpaper;
+    animation-duration:5s;
+}   
+
+.heading{
+display:inline-block;
+positon:absolute;
+}
+
+.option{
+    height:30%;
+    width:30%;
+    border:2px solid  #f1f1f1 ;
+    position:absolute;
+    bottom:5%;
+    margin:20px;
+    background-color:black;
+    border-radius:2rem;
+    display:inline-block;
+    
+
+}

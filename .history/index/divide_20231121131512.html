@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .slanted-container {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slant-divider {
+      flex: 1;
+      background: #333;
+      clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+      cursor: pointer;
+    }
+
+    .content-container {
+      flex: 1;
+      background: #555;
+      cursor: pointer;
+    }
+
+    /* Additional styling for demonstration purposes */
+    .content-container, .slant-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slanted-container">
+  <div class="slant-divider" onclick="openPage('page1.html')">
+    <!-- Your content for the first div -->
+    <p>Click to open Page 1</p>
+  </div>
+  <div class="content-container" onclick="openPage('page2.html')">
+    <!-- Your content for the second div -->
+    <p>Click to open Page 2</p>
+  </div>
+</div>
+
+<script>
+  function openPage(url) {
+    window.location.href = url;
+  }
+</script>
+
+</body>
+</html>

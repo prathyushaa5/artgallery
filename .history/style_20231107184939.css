@@ -1,0 +1,21 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+
+.profile{
+    width:10%;
+    border-radius:50%;
+}
+form{
+    width:30%;
+    border: 1px solid #ccc;
+}
+.username,.password{
+    width:100%;
+    
+}
+input[type="text"],
+input[type="password"]{
+    padding:.5rem;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+#part1{
+    height:100vh;
+    top:0;
+    left:0;
+    width:20%;
+    background-color:black;
+   
+}
+
+#part2{
+    height:100vh;
+    background-color:pink;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.box{
+    height:400px;
+    width:400px;
+    background-color:#ccc;
+    border:2px solid black;
+    display:block;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    justify-content:space around;
+    text-align:center;
+    font-weight:bolder;
+}
+#part3{
+    background-color:yellow;
+    height:100vh;
+    width:100vh;
+}
+img{
+    display:block;
+    margin:30px;
+    height:auto;
+}
+</style>
+<body>
+<div id="part1">
+    hello;
+</div>
+<div id="part2">
+    <section id="box1" class="box">
+        <img src="../images/artist11.jpg" alt="" height="200">
+        <span>Divya Shah</span>
+        <span>32 years</span>
+    </section>
+    <section id="box2" class="box">
+        <img src="../images/artist13.jpg" alt="" height="200">
+        <span>John Mathews</span>
+        <span>40 years</span>
+    </section>
+    <section id="box3" class="box">
+        <img src="../images/artist14.jpg" alt="" >
+        <span>Mark Thomas</span>
+        <span>38 years</span> 
+    </section>
+    <section id="box4" class="box">
+        <img src="../images/artist12.jpg" alt="" height="200">
+        <span>Tharun Verma</span>
+        <span>30 years</span>
+    </section>
+    <section id="box5" class="box">
+         <img src="../images/artist16.jpg" alt="" height="200">
+        <span>John Mathews</span>
+        <span>40 years</span>
+    </section>
+    <section id="box5" class="box">
+         <img src="../images/artist15.jpg" alt="" height="200">
+        <span>John Mathews</span>
+        <span>40 years</span>
+    </section>
+   
+</div>
+<div id="part3">
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.about-us{
+    width:70%;
+    border:2px solid #ccc;
+    border-radius:20%;
+}

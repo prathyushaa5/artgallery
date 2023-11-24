@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      height: 100vh;
+    }
+
+    .split-container {
+      display: flex;
+      width: 100%;
+    }
+
+    .split-container > div {
+      flex: 1;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      overflow: hidden;
+    }
+
+    .split-container > div:hover {
+      background-color: #f0f0f0; /* Change the background color on hover */
+    }
+
+    /* Additional styling for demonstration purposes */
+    .content-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+    }
+
+    .page1 {
+      background-color:pink;
+    }
+
+
+    #heading1{
+        transform:rotate(-90deg);
+        position:relative;
+        bottom:100px;
+        color:white;
+        font-size:40px;
+        }
+    
+  </style>
+</head>
+<body>
+
+<div class="split-container">
+  <div class="content-container page1" onclick="location.href='page1.html';">
+    <p id="heading1">PHOTOGRAPHY</p>
+  </div>
+  <div class="content-container page2" onclick="location.href='page2.html';">
+    <!-- Clicking this div will open page2.html -->
+    <p>Click here to open Page 2</p>
+  </div>
+</div>
+
+</body>
+</html>

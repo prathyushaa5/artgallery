@@ -1,0 +1,12 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+
+.profile{
+    width:10%;
+    border-radius:50%;
+}
+.username,.password{
+    width:100%;
+}

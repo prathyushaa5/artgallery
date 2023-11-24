@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    padding:0px;
+    margin:0px;
+    background-color:#9F91CC;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+form{
+    width:400px;
+    border:2px solid #ccc;
+    padding:20px;
+    background-color:#ffffff;
+    margin:100px;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.button{
+    display:block;
+    margin:auto;
+}
+.input{
+    margin-right:10px;
+}
+</style>
+<body>
+    <div class="confirmation">
+        <form action="" method="post" class="form">
+            <h2>Contact details</h2>
+            <section class=sec>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" class="input"></section>
+            <section class=sec>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" class="input"></section>
+            <section class=sec>
+            <label for="text">Address</label>
+            <input type="text" id="address" class="input"></section>
+            <section class=sec>
+            <label for="phoneno">Phone-No</label>
+            <input type="tel" id="phoneno" class="input"></section>
+            <section class=sec>
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input"></section>
+            <section class=sec>
+            <input type="reset" class="button"></section>
+            <p id="cost">Total price:</p>
+            <section class=sec></section>
+            <span>Payment mode:</span>
+            <label for="Other-UPI">Other-UPI</label>
+            <input type="radio" id="Other-UPI" name="payment">
+            <label for="Credit or Debit">Credit or Debit</label>
+            <input type="radio" id="Credit or Debit" name="payment">
+            <label for="Net Banking">Net Banking</label>
+            <input type="radio" id="Net Banking" name="payment">
+            <label for="Cash on Delivery">Cash on Delivery</label>
+            <input type="radio" id="Cash on Delivery" name="payment"><br><br>
+            <button class="button">Confirm Order</button>
+
+
+        </form>
+    </div>
+</body>
+</html>

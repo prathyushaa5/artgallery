@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    padding:0px;
+    margin:0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#9F91CC;
+}
+.adminlogin{
+    margin:10px;
+    font-size:30px;
+    font-weight:bolder;
+    text-align:left;
+   
+   
+}
+.box{
+    width:30%;
+    height:65vh;
+    border:2px solid #ccc;
+    margin:100px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+    background-color:#ffffff;
+    text-align:center;  
+}
+input{
+  height:15%;
+  width:100%;
+  box-sizing:border-box;
+}
+a{
+    text-decoration:none;
+    color:#111111;
+}
+#button,#reset{
+    color:#ffffff;
+    background-color:#9F91CC;
+    border:none;
+    font-weight:bolder;
+    display:block;
+    width:100%;
+
+}
+#button:hover{
+    opacity:0.5;
+}
+a:hover{
+    color:green;
+}
+#reset{
+    margin-top:10px;
+}
+#reset:hover{
+    opacity:0.5;
+}
+</style>
+<body>
+    <div class="box">
+        <form method="post" >
+            <div class="upload">Upload</div>
+        <input type="file" name="image" id="image" placeholder="Image" size="30"><br><br>
+        <input type="number" name="price" id="price" placeholder="Price"><br><br>
+        <input type="button"onclick="uploadImage();"><br><br>
+        <input type ="reset" id="reset">
+        <p id="message"></p>
+        <script>
+            function uploadImage(){
+                document.getElementById('message').innerHTML="Upload Successfully"
+                document.getElementById("image").value="" ;
+                document.getElementById("price").value="";       
+            }
+        </script>
+</body>
+</html>

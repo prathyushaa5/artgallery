@@ -1,0 +1,39 @@
+body{
+    margin:0px;
+    padding:0px;   
+}
+
+.art-navbar{
+    width:100%;
+    background-color:#000000;
+    height:10vh;
+    padding:0px;
+    margin:0px;
+}
+.heading{
+    color:white;
+    padding:30px;
+    
+}
+.art-grid{
+    display:flex;
+    flex-wrap:wrap;
+    padding:10px;
+    
+}
+.grid{
+    border:1px solid black;
+    height:22rem;
+    margin:5px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    
+}
+
+img{
+    height:35vh;
+    display:block;
+    margin:15px;
+
+}

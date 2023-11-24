@@ -1,0 +1,191 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color:#000000;
+}
+.navbar{
+    width:100%;
+    height:8vh;
+    background-color:#000000;
+    display:flex;
+    flex-direction:row-reverse;
+    color:white;
+}   
+button:hover{
+   opacity:0.5;
+}   
+         
+span.p1{
+    position:relative;
+    right:90%;
+    margin-top:24px;
+
+}
+span a{
+    padding:5px;
+}
+span a:hover{
+    opacity:0.5;
+}
+.home,.navbar a{
+    text-decoration:none;
+    color:white;
+}
+.home,.login,.admin,.aboutUs{
+  padding:24px;
+}
+.home:hover,.login:hover,.admin:hover,.aboutUs:hover{
+    opacity:0.5;
+  }
+  .slider{
+   width:1000px;
+   height:600px;
+   background-color:yellow;
+   margin-top:0px;
+   overflow:hidden;
+   text-align:center;
+   display:inline-block;
+   position:relative;
+   margin-left:10px;
+   grid-column:1/2;
+   
+  }
+
+.image-container{
+    width:3000px;
+    height:600px;
+    clear:both;
+    position:relative;
+    -webkit-transition:left 2s;
+    -moz-transition:left 2s;
+    -o-transition:left 2s;
+    transition:left 2s;
+    
+
+}
+.slide{
+    float:left;
+    margin:0px;
+    padding:0px;
+}
+
+#slide1:target ~ .image-container{
+    left:0px;
+}
+
+#slide2:target ~ .image-container{
+    left:-1000px;
+}
+#slide3:target ~ .image-container{
+    left:-2000px;
+}
+
+.buttons{
+    position:relative;
+    top:-20px;
+}
+.buttons a{
+    display:inline-block;
+    height:15px;
+    width:15px;
+    border-radius:50px;
+    background-color:lightgreen;
+}
+.main{
+    display:grid;
+    grid-template-columns:auto auto auto;
+    gap:10px;
+
+}
+.name1{
+   
+    background-color:white;
+    display:inline-block;
+    height:65vh;
+    width:454px;
+    grid-column:2;
+    max-width:100%;
+    font-size:60px;
+    color:#ffffff;
+    text-shadow:10px 10px 15px black;
+    text-align:center;
+    font-weight:bolder;
+    verticle-align:middle;
+    line-height:30rem;
+    margin-right:10px;
+    background:url("../images/squareimg.jpg");
+    
+
+}
+
+.name2{
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-column:1;
+    height:8vh;
+    width:1000px;
+    max-width:100%;
+    margin-left:10px;
+    color:white;
+    font-size:20px;
+    overflow:hidden;
+    animation:animate 5s infinite; 
+
+}
+
+.name3{
+
+    grid-column:2;
+    width:460px;
+    height:1vh;
+    max-width:100%;
+    margin-right:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:30px;
+    position:relative;
+    bottom:30px; 
+    
+    
+}
+.name3-shopnow{
+    padding:10px 30px; 
+    color:#000000;  
+}
+.name3-shopnow a{
+    color:black;
+    text-decoration:none;
+}
+
+@keyframes animate{
+    0%{
+        position:relative;
+        left:0px;
+    }
+    20%{
+        position:relative;
+        left:25%;
+    }
+    40%{
+        position:relative;
+        left:60%;
+    }
+    60%{
+        position:relative;
+        left:80%;
+    }
+    80%{
+        position:relative;
+        left:100%;
+    }
+    100%{
+        position:relative;
+        left:0%;
+    }
+    
+}

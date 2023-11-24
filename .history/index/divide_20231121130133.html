@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .slanted-container {
+      display: flex;
+      height: 100vh; /* Adjust the height as needed */
+    }
+
+    .slant-divider {
+      flex: 1;
+      background-image: url('path/to/first-image.jpg'); /* Set the path to your first background image */
+      background-size: cover;
+      background-position: center;
+      clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+    }
+
+    .content-container {
+      flex: 1;
+      background-image: url('path/to/second-image.jpg'); /* Set the path to your second background image */
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Additional styling for demonstration purposes */
+    .content-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slanted-container">
+  <div class="slant-divider"></div>
+  <div class="content-container">
+    <!-- Your content for the second div -->
+    <p>Content for the second div goes here.</p>
+  </div>
+</div>
+
+</body>
+</html>
